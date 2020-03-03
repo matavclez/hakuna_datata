@@ -1,6 +1,6 @@
 # hakuna_datata
 Competición de XXXXXX
-
+hhhh
 
 **core:**<br/>
 Donde esta el grueso del proyecto. Es el código final que permite ejecutar todo de principio a fin. Leer, limpiar el dato, añadir nuevas variables, entrenar y predecir.<br/>
