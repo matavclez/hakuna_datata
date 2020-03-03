@@ -17,16 +17,16 @@ Donde podeis hacer visualizaciones, jugar con modelos... pero no es código prod
 
 # Mapa de los documentos
 
-#+--core
-#|     |
-#|     +--data_pipeline
-#|     |
-#|     +--model
-#|     |
-#|     +--utils
-#|
-#|
-#+--docs
-#|
-#|
-#+--exploratorio
+	+--core
+	|     |
+	|     +--data_pipeline
+	|     |
+	|     +--model
+	|     |
+	|     +--utils
+	|
+	|
+	+--docs
+	|
+	|
+	+--exploratorio
