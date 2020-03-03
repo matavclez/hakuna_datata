@@ -10,24 +10,41 @@ class Table:
     """
     :param usuario: En un string, insertar una de los siguientes nombres: gabriel, pablo, manuel o matias
     """
+    _ID_TABLE = ""
+
     def __init__(self, usuario: str):
         self.usuario = usuario
         self.ruta_base = schema[usuario]
-		self._relative_paths = relative_paths
+        self._relative_paths = relative_paths
+        self.ruta_parcial = self._get_ruta_parcial()
+        self.ruta_tabla = self._get_ruta_tabla()
 
-    def read(self, table_path):
+    def _get_ruta_parcial(self):
+        if self._ID_TABLE == "":
+            ruta_parcial = ""
+        else:
+            ruta_parcial = self._relative_paths[self._ID_TABLE]
+        return ruta_parcial
+
+    def _get_ruta_tabla(self):
+        if self._ID_TABLE == "":
+            ruta_tabla = self.ruta_base
+        else:
+            ruta_tabla = "{}/{}".format(self.ruta_base,self.ruta_parcial)
+        return ruta_tabla
+
+    def read(self):
         """
         Read the table (as a "view")
-        :param table_path: Table path
         :return:
         """
-        return pd.read_csv(table_path)
+        return pd.read_csv(self.ruta_tabla)
 
-    def write(self, df, table_path):
+    def write(self, df):
         """
         Write a Dataframe into the table.
         :param df: Dataframe with the data to write.
         :return: Escribe un csv
         """
-        return df.to_csv(table_path,index=False)
+        return df.to_csv(self.ruta_tabla, index=False)
 		
