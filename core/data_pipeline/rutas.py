@@ -28,20 +28,23 @@ Será una carpeta llamada datos_cajamar. Dentro de ella todos tendremos la misma
 
 
 # Schema personal ###################################################################################
-gabriel = "/datos_cajamar"
-pablo 	= "/datos_cajamar"
-manuel 	= "/datos_cajamar"
-matias 	= "/Users/matiasbbva/Desktop/DATA_SCIENCE/Hackaton/6_Cajamar/datos_cajamar"
+schema = {
+	"gabriel" : "/datos_cajamar",
+	"pablo"   : "/datos_cajamar",
+	"manuel"  : "/datos_cajamar",
+	"matias"  : "/Users/matiasbbva/Desktop/DATA_SCIENCE/Hackaton/6_Cajamar/datos_cajamar"
+}
 
 
 # RELATIVE PATHS ####################################################################################
-# Datos originales
-model_data		=	"/datos_originales/Modelar_UH2020.txt"
-estimar_data	=	"/datos_originales/Estimar_UH2020.txt"
-# Datos originales tratados (preparados para leer, sin erratas, ) IGUAL NO ES NECESARIO ESTE PASO
-model_prepro_data		=	"/datos_originales/modelar_prepro_UH2020.txt"
-estimar_prepro_data		=	"/datos_originales/estimar_prepro_UH2020.txt"
-# Datos prepro a los que añadimos variables nuevas
-model_feateng_data		=	"/datos_originales/modelar_feateng_UH2020.txt"
-estimar_feateng_data	=	"/datos_originales/estimar_feateng_UH2020.txt"
-
+relative_paths = {
+	# Datos originales
+	"model_data_path"			:	"/datos_originales/Modelar_UH2020.txt",
+	"estimar_data_path"			:	"/datos_originales/Estimar_UH2020.txt",
+	# Datos originales tratados (preparados para leer, sin erratas, ) IGUAL NO ES NECESARIO ESTE PASO
+	"model_prepro_data_path"	:	"/datos_originales/modelar_prepro_UH2020.txt",
+	"estimar_prepro_data_path"	:	"/datos_originales/estimar_prepro_UH2020.txt",
+	# Datos prepro a los que añadimos variables nuevas
+	"model_feateng_data_path"	:	"/datos_originales/modelar_feateng_UH2020.txt",
+	"estimar_feateng_data_path"	:	"/datos_originales/estimar_feateng_UH2020.txt"
+}
