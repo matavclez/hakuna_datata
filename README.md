@@ -20,10 +20,24 @@ Donde podeis hacer visualizaciones, jugar con modelos... pero no es código prod
 	+--core
 	|     |
 	|     +--data_pipeline
+	|     |	     |
+	|     |	     +--rutas.py
+	|     |	     |	
+	|     |	     +--tables	
+	|     |		    |
+	|     |		    +--	model_data_table
+	|     |		    +--	estimar_data_table
+	|     |		    +--	model_prepro_data_table
+	|     |		    +--	estimar_prepro_data_table
+	|     |		    +--	model_feateng_data_table
+	|     |		    +--	estimar_feateng_data_table	
+	|     |	
 	|     |
 	|     +--model
 	|     |
 	|     +--utils
+	|     	     |
+	|     	     +--table.py	
 	|
 	|
 	+--docs
