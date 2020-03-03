@@ -39,12 +39,12 @@ schema = {
 # RELATIVE PATHS ####################################################################################
 relative_paths = {
 	# Datos originales
-	"model_data"			:	"/datos_originales/Modelar_UH2020.txt",
-	"estimar_data"			:	"/datos_originales/Estimar_UH2020.txt",
+	"model_data"			:	"Modelar_UH2020.txt",
+	"estimar_data"			:	"Estimar_UH2020.txt",
 	# Datos originales tratados (preparados para leer, sin erratas, ) IGUAL NO ES NECESARIO ESTE PASO
-	"model_prepro_data"	:	"/datos_originales/modelar_prepro_UH2020.txt",
-	"estimar_prepro_data"	:	"/datos_originales/estimar_prepro_UH2020.txt",
+	"model_prepro_data"	:		"modelar_prepro_UH2020.txt",
+	"estimar_prepro_data"	:	"estimar_prepro_UH2020.txt",
 	# Datos prepro a los que añadimos variables nuevas
-	"model_feateng_data"	:	"/datos_originales/modelar_feateng_UH2020.txt",
-	"estimar_feateng_data"	:	"/datos_originales/estimar_feateng_UH2020.txt"
+	"model_feateng_data"	:	"modelar_feateng_UH2020.txt",
+	"estimar_feateng_data"	:	"estimar_feateng_UH2020.txt"
 }
