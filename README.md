@@ -1,5 +1,5 @@
 # hakuna_datata
-Competición de CajaMar. Minsait Land Classification
+Competición de XXXXXX
 
 
 **core:**<br/>
